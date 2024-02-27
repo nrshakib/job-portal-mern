@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" max-w-screen-2xl container mx-auto xl:px-24 px-4">
+    <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4">
       <div className="flex justify-between py-4">
         <Link to="/">
           <div className="flex items-center gap-2 p-1 hover:border hover:border-blue-400 hover:rounded hover:bg-yellow-300">

@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4">
+    <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4 shadow-lg">
       <div className="flex justify-between py-4">
         <Link to="/">
           <div className="flex items-center gap-2 p-1 hover:border hover:border-blue-400 hover:rounded hover:bg-yellow-300">
@@ -36,9 +36,9 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-
+      <hr className="text-black h-0.5 bg-black" />
       {/* navbar items for large screens */}
-      <div className="hidden md:flex items-center justify-center gap-4 font-semibold text-gray-600 text-lg">
+      <div className="hidden md:flex items-center justify-center gap-4 mt-1 pb-2 font-semibold text-gray-600 text-lg">
         <NavLink
           to={"/"}
           className={({ isActive }) => (isActive ? "text-blue-600" : "")}

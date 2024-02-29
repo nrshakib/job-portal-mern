@@ -72,8 +72,12 @@ const HomePage = () => {
     <div>
       <Banner />
       <SearchBox inputJobs={inputJobs} handleInputChange={handleInputChange} />
-      <div>
-        <Jobs displayJobs={displayJobs} />
+      <div className="md:grid grid-cols-5 gap-4 lg:px-24 px-4 py-12">
+        <div className="bg-yellow-400 p-4 rounded">Left</div>
+        <div className="bg-gray-300 col-span-3 p-4 rounded">
+          <Jobs displayJobs={displayJobs} />
+        </div>
+        <div className="bg-yellow-400 p-4 rounded">Right</div>
       </div>
     </div>
   );
